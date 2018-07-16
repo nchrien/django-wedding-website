@@ -5,7 +5,7 @@ from guests.models import Party, Guest
 
 
 def import_guests(path):
-    with open(path, 'rb') as csvfile:
+    with open(path, 'r') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
         first_row = True
         for row in reader:
