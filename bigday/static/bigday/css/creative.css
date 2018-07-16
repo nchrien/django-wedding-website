@@ -17,7 +17,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: rgb(49, 45, 168);
     border-width: 3px;
 }
 
@@ -26,7 +26,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: rgb(71, 65, 243);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -34,7 +34,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: rgb(60, 55, 205);
 }
 
 h1,
@@ -54,7 +54,7 @@ p {
 
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: rgb(49, 45, 168);
 }
 
 .bg-primary a {
@@ -96,7 +96,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: rgb(71, 65, 243);
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -109,17 +109,17 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: rgb(28,56,81);
+    color: rgb(27, 25, 93);
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: rgb(71, 65, 243);
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -130,12 +130,12 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(28,56,81,.3);
-        background-color: transparent;
+        border-color: rgba(27, 25, 93, .3);
+        background-color: rgba(178,178,178,.5);
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(28,56,81,.7);
+        color: rgb(27, 25, 93);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -145,12 +145,12 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(28,56,81,.7);
+        color: rgb(27, 25, 93);
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: rgb(28,56,81);
+        color: #fff;
     }
 
     .navbar-default.affix {
@@ -160,22 +160,27 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: rgb(49, 45, 168);
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: rgb(71, 65, 243);
+    }
+	
+	.navbar-default.affix .nav > li.active>a,
+    .navbar-default.affix .nav>li.active>a:focus {
+	    color: rgb(71, 65, 243);
     }
 
     .navbar-default.affix .nav > li>a,
     .navbar-default.affix .nav>li>a:focus {
-        color: rgb(28,56,81);
+        color: rgb(27, 25, 93);
     }
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: rgb(71, 65, 243);
     }
 }
 
@@ -184,8 +189,8 @@ header {
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: rgb(28,56,81);
-    background-position: center;
+    color: rgb(27, 25, 93);
+    background-position: center top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -193,7 +198,7 @@ header {
 }
 
 #main-header {
-    background-image: url('../images/wedding-selfie-better.jpg');
+    background-image: url('../images/NE_moon.jpg');
 }
 
 header .header-content {
@@ -203,12 +208,19 @@ header .header-content {
     text-align: center;
 }
 
+header .header-content-inner {
+    background-color: rgba(178, 178, 178, .5);
+	padding: 10px;
+	border: 1px solid rgba(27, 25, 93, .3);
+	
+}
+
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
-    color: #fff;
+    color: rgb(27, 25, 93);
 }
 
 header .header-content .header-content-inner hr {
@@ -223,7 +235,7 @@ header .header-content .header-content-inner p {
 }
 
 #second-header {
-    background-image: url('../images/chapmans-peak-view.jpg');
+    background-image: url('../images/proposal.jpg');
 }
 
 @media(min-width:768px) {
@@ -232,12 +244,12 @@ header .header-content .header-content-inner p {
     }
 
     header.secondary {
-        min-height: 30%;
+        min-height: 65%;
     }
 
     header .header-content {
         position: absolute;
-        top: 15%;
+        top: 50%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -305,7 +317,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(89, 98, 255,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -354,7 +366,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: rgb(71, 65, 243);
 }
 
 .no-gutter > [class*=col-] {
@@ -416,12 +428,13 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #999;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #999;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+	margin: 10px 0px;
 }
 
 .btn-primary:hover,
@@ -430,9 +443,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #7f7f7f;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #7f7f7f;
 }
 
 .btn-primary:active,
@@ -459,12 +472,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #999;
+    background-color: #999;
 }
 
 .btn-primary .badge {
-    color: #f05f40;
+    color: #999;
     background-color: #fff;
 }
 
