@@ -41,15 +41,15 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.9);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -96,7 +96,7 @@
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(230, 235, 255, 0.3));
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(230, 235, 255, 0.5));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -162,11 +162,19 @@
 }
 
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+}
+
+.about-section img {
+  margin-bottom: 3rem;
+}
+
+.about-section.alt-row {
+  padding-top: 5rem;
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 
 .projects-section .featured-text {
@@ -193,6 +201,18 @@
     border-color: #3363ff;
     border-width: .25rem;
     width: 30%;
+  }
+}
+
+.projects-section.alt-row {
+  padding-top: 0;
+}
+
+@media (min-width: 992px) {
+  .projects-section.alt-row .featured-text {
+    padding: 0 2rem 0 0;
+    border-right: 0.5rem solid #3363ff;
+    border-left: 0;
   }
 }
 
