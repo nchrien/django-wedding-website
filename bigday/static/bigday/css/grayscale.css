@@ -83,8 +83,8 @@
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../images/NE_SJC.jpg");
+  padding: 25rem 0 5rem;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../images/NE_SJC_small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -107,6 +107,11 @@
 }
 
 @media (min-width: 768px) {
+  .masthead {
+    padding: 15rem 0;
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../images/NE_SJC.jpg");
+  }
+
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
