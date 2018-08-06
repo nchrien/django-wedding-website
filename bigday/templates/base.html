@@ -4,6 +4,7 @@
 
   <head>
 
+    {% block page_head %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Natalie Chrien and Eric Lundquist's wedding website">
@@ -11,14 +12,17 @@
 
     <title>Eric and Natalie's Wedding!</title>
 	
-	<link rel="shortcut icon" href="{%  static 'favicon.ico' %}">
+	<link rel="shortcut icon" href="{%  static 'bigday/favicon.ico' %}">
 
     <!-- Bootstrap core CSS -->
-	<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'bigday/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+    <link href="{% static 'bigday/css/grayscale.css' %}" rel="stylesheet">
 	
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,8 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	{% include "partials/google-analytics.html" %}
-    {% block page_head %}
+{% include "partials/google-analytics.html" %}
     {% endblock %}
 
   </head>
@@ -35,22 +38,21 @@
   <body id="page-top">
 {% block page_content %}{% endblock %}
 {% include "partials/footer.html"  %}
-    
+
+{% block page_js %}
 	<!-- JQuery -->
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	
 	<!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'bigday/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'bigday/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/font-awesome/js/all.js' %}"></script>
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'bigday/vendor/font-awesome/js/all.js' %}"></script>
+    <script src="{% static 'bigday/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
     <!-- Custom scripts for this template -->
     <script src="{% static 'bigday/js/grayscale.min.js' %}"></script>
-
-{% block page_js %}
 {% endblock %}
   </body>
 
