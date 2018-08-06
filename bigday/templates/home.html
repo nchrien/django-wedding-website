@@ -37,19 +37,7 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Welcome</h2>
-            <p class="text-white-50">We're excited to be planning our wedding for Labor Day weekend 2019, and we hope you can join us! You're always 
-			welcome to contact us directly with any questions you might have, but hopefully this website will give you all the information you need 
-			about the event, the area, and the weekend as a whole.</p>
-          </div>
-        </div>
-        <img src="{% static 'bigday/images/blue_soul.png' %}" class="img-fluid" alt="">
-      </div>
-    </section>
+{% include 'partials/about.html' %}
 
     <!-- Event Details Section -->
 {% include 'partials/event.html' %}
