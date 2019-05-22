@@ -1,10 +1,6 @@
 branch-defaults:
   master:
     environment: wedsite-dev
-environment-defaults:
-  wedsite-dev:
-    branch: null
-    repository: null
 global:
   application_name: wedsite
   branch: null
@@ -15,7 +11,7 @@ global:
   instance_profile: null
   platform_name: null
   platform_version: null
-  profile: eb-cli
+  profile: null
   repository: null
   sc: git
   workspace_type: Application
