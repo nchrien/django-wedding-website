@@ -126,15 +126,6 @@ STATICFILES_DIRS = (
     os.path.join('bigday', 'static'),
 )
 
-# the address your emails (save the dates/invites/etc.) will come from
-DEFAULT_WEDDING_FROM_EMAIL = 'You and Your Partner <happilyeverafter@example.com>'
-# the default reply-to of your emails
-DEFAULT_WEDDING_REPLY_EMAIL = 'happilyeverafter@example.com'
-
-# when sending test emails it will use this address
-DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
-WEDDING_CC_LIST = []  # put email addresses here if you want to cc someone on all your invitations
-
 try:
     from .localsettings import *
 except ImportError:
