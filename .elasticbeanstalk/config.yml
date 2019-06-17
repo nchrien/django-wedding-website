@@ -1,15 +1,16 @@
 branch-defaults:
   master:
-    environment: wedsite-dev
+    environment: wedsite-prod
+    group_suffix: null
 environment-defaults:
   wedsite-dev:
     branch: null
     repository: null
 global:
-  application_name: wedsite
+  application_name: wedsite-prod
   branch: null
   default_ec2_keyname: aws-eb
-  default_platform: Python 3.6
+  default_platform: python-3.6
   default_region: us-east-2
   include_git_submodules: true
   instance_profile: null
