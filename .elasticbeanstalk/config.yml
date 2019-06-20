@@ -3,7 +3,7 @@ branch-defaults:
     environment: wedsite-prod
     group_suffix: null
 environment-defaults:
-  wedsite-dev:
+  wedsite-prod:
     branch: null
     repository: null
 global:
