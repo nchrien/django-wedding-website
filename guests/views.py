@@ -1,4 +1,4 @@
-from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render
 
 def rsvp(request):
-    return HttpResponse("RSVP form coming soon!")
+    return render(request, 'guests/rsvp.html', {})
